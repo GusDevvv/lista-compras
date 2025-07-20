@@ -1,0 +1,81 @@
+* {
+    font-family: "Montserrat", sans-serif;
+    color:rgb(255, 255, 255);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.inform {
+    display: inline-block;
+}
+
+div[class^="item"] {
+    margin: 8px 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+form {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+input[type="text"] {
+    padding: 6px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    flex: 1;
+}
+
+input[type="checkbox"] {
+    transform: scale(1.2);
+}
+
+h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+h4, h3 {
+    font-weight: normal;
+    font-size: 16px;
+    text-align: center;
+}
+
+form {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 10px;
+}
+
+body {
+    background-image: url('./familia.png'); /* Caminho da imagem */
+    background-size: cover; /* Faz a imagem preencher a tela inteira */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita repetição da imagem */
+    min-height: 100vh; /* Garante que cubra toda a altura da tela */
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Cor preta com transparência */
+    z-index: -1;
+}
+
+input[type="text"] {
+    color: black;
+}
+
